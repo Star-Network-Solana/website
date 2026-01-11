@@ -1,0 +1,189 @@
+/* STAR Network "Starlight" Theme */
+
+:root {
+    /* Palette */
+    --color-primary: #0F172A;
+    /* Deep Navy (Background/Primary Text) */
+    --color-secondary: #0EA5E9;
+    /* Electric Blue (Tech/Speed) */
+    --color-accent: #F97316;
+    /* Warm Rust (Community) */
+    --color-surface: #1E293B;
+    /* Slate 800 (Cards/Sections) */
+    --color-text: #F8FAFC;
+    /* Slate 50 (Text) */
+    --color-text-muted: #94A3B8;
+    /* Slate 400 (Subtext) */
+    --color-border: #334155;
+    /* Slate 700 */
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    --gradient-glow: radial-gradient(circle at center, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+
+    /* Typography */
+    --font-heading: "Inter", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    /* Spacing & Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
+
+    /* Effects */
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-glow: 0 0 20px rgba(14, 165, 233, 0.2);
+    --backdrop-blur: blur(12px);
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: white;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    color: var(--color-text-muted);
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Utility Classes */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #0EA5E9, #38BDF8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--color-secondary);
+    color: white;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+}
+
+.btn-primary:hover {
+    background: #0284C7;
+    transform: translateY(-1px);
+    box-shadow: 0 0 25px rgba(14, 165, 233, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-secondary);
+    color: white;
+    background: rgba(14, 165, 233, 0.05);
+}
+
+/* Layout Specifics */
+section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: var(--backdrop-blur);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    height: var(--header-height);
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-secondary);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+}

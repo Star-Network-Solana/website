@@ -51,7 +51,7 @@ fn Hero() -> impl IntoView {
                 <h1>"The Trust Layer for Rust Education"</h1>
                 <p class="hero-subtext">"Accreditation, verification, and open standards that make Rust training credible, transparent, and reliable."</p>
 
-                <div class="callout">
+                <div class="callout hero-callout">
                     <p><strong>"Note: "</strong> "Built for ecosystems, institutions, trainers, and learners who need confidence—not guesswork. STAR Network does not provide courses directly; it provides the standards and verification infrastructure."</p>
                 </div>
 
@@ -175,7 +175,7 @@ fn Mission() -> impl IntoView {
         <section id="mission">
             <div class="container" style="text-align: center; margin-top: 4rem;">
                 <hr />
-                <p style="font-size: 1.2rem; font-weight: 500; color: var(--text-primary);">
+                <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); max-width: 800px; margin: 0 auto;">
                     "Rust adoption depends on education quality. STAR Network was created to ensure that those who teach Rust are trusted, prepared, and aligned with real-world needs—so ecosystems can scale responsibly."
                 </p>
             </div>
@@ -186,9 +186,9 @@ fn Mission() -> impl IntoView {
 #[component]
 fn CtaBand() -> impl IntoView {
     view! {
-        <section id="cta-band" style="background: var(--bg-color); border-top: 1px solid var(--border-color); margin-top: 6rem; padding: 6rem 1.5rem; text-align: center;">
-            <div class="container" style="max-width: 700px;">
-                <h2 style="border-bottom: none; margin-bottom: 2.5rem; font-size: 2rem;">"Engage with STAR Network"</h2>
+        <section id="cta-band">
+            <div class="container">
+                <h2>"Engage with STAR Network"</h2>
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                     <a href="#apply" class="btn btn-secondary" style="background: transparent; padding: 0.8rem 1.5rem; font-size: 1rem;">"Apply as a Trainer"</a>
                     <a href="#request" class="btn btn-secondary" style="background: transparent; padding: 0.8rem 1.5rem; font-size: 1rem;">"Request an Accredited Trainer"</a>

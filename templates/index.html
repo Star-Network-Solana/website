@@ -93,12 +93,15 @@
     </div>
 </section>
 
-<section id="cta-band" style="background: var(--block-bg); margin-top: 4rem; padding: 4rem 1.5rem; text-align: center;">
-    <div class="container">
-        <h2 style="border-bottom: none; margin-bottom: 2rem;">{{ section.extra.primary_cta_band.headline }}</h2>
+<section id="cta-band"
+    style="background: var(--bg-color); border-top: 1px solid var(--border-color); margin-top: 6rem; padding: 6rem 1.5rem; text-align: center;">
+    <div class="container" style="max-width: 700px;">
+        <h2 style="border-bottom: none; margin-bottom: 2.5rem; font-size: 2rem;">{{
+            section.extra.primary_cta_band.headline }}</h2>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
             {% for btn in section.extra.primary_cta_band.buttons %}
-            <a href="{{ btn.url }}" class="btn btn-secondary" style="background: #fff;">{{ btn.text }}</a>
+            <a href="{{ btn.url }}" class="btn btn-secondary"
+                style="background: transparent; padding: 0.8rem 1.5rem; font-size: 1rem;">{{ btn.text }}</a>
             {% endfor %}
         </div>
     </div>

@@ -1,6 +1,7 @@
 use leptos::*;
 
 mod app;
+pub mod components;
 use app::*;
 
 fn main() {
@@ -8,4 +9,3 @@ fn main() {
     console_error_panic_hook::set_once();
     mount_to_body(|| view! { <App/> })
 }
-pub mod components;

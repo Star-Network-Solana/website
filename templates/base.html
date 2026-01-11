@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+    <link rel="stylesheet" href="{{ get_url(path=" style.css") }}">
     <meta name="description" content="{{ config.description }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="logo">Star Network</div>
+        <div class="logo">
+            <a href="/">STAR Network</a>
+        </div>
+        <nav class="primary-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://github.com/Star-Network-Solana">GitHub</a></li>
+                {% for item in config.extra.menu_items %}
+                <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+                {% endfor %}
             </ul>
         </nav>
+        <div class="utility-nav">
+            {% for item in config.extra.utility_items %}
+            <a href="{{ item.url }}" class="btn-nav {{ item.class }}">{{ item.name }}</a>
+            {% endfor %}
+        </div>
     </header>
 
     <main>
@@ -23,7 +34,28 @@
     </main>
 
     <footer>
-        <p>&copy; {{ now() | date(format="%Y") }} Star Network Solana. All rights reserved.</p>
+        <div class="footer-col">
+            <p><strong>STAR Network</strong></p>
+            <p>The Trust Layer for Rust Education</p>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#standards">Standards</a></li>
+                <li><a href="#registry">Registry</a></li>
+                <li><a href="#governance">Governance</a></li>
+                <li><a href="#">Documentation</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="https://github.com/Star-Network-Solana">GitHub</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Legal / License</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
+
 </html>

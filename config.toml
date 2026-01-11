@@ -1,11 +1,25 @@
 base_url = "https://star-network-solana.github.io/website"
 title = "Star Network Solana"
-description = "Landing page for the Star Network Solana project"
+description = "The Trust Layer for Rust Education"
 default_language = "en"
-
 
 [markdown]
 
 
 [extra]
 author = "Star Network Team"
+
+# Primary Navigation
+menu_items = [
+    { name = "Standards", url = "#standards" },
+    { name = "Registry", url = "#registry" },
+    { name = "How It Works", url = "#how-it-works" },
+    { name = "Who It’s For", url = "#audience" },
+    { name = "Governance", url = "#governance" }
+]
+
+# Utility / CTA Navigation
+utility_items = [
+    { name = "Apply as Trainer", url = "#apply", class = "primary" },
+    { name = "View Registry", url = "#registry-view", class = "secondary" }
+]

@@ -1,0 +1,14 @@
+/Users/gaveeshjain/Documents/StarNetwork/website/target/release/deps/serde-910591469ab591aa.d: /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/gaveeshjain/Documents/StarNetwork/website/target/release/build/serde-4612559ca2080caf/out/private.rs
+
+/Users/gaveeshjain/Documents/StarNetwork/website/target/release/deps/libserde-910591469ab591aa.rlib: /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/gaveeshjain/Documents/StarNetwork/website/target/release/build/serde-4612559ca2080caf/out/private.rs
+
+/Users/gaveeshjain/Documents/StarNetwork/website/target/release/deps/libserde-910591469ab591aa.rmeta: /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/gaveeshjain/Documents/StarNetwork/website/target/release/build/serde-4612559ca2080caf/out/private.rs
+
+/Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/gaveeshjain/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/gaveeshjain/Documents/StarNetwork/website/target/release/build/serde-4612559ca2080caf/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/gaveeshjain/Documents/StarNetwork/website/target/release/build/serde-4612559ca2080caf/out

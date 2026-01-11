@@ -1,0 +1,11 @@
+base_url = "https://star-network-solana.github.io/website"
+title = "Star Network Solana"
+description = "Landing page for the Star Network Solana project"
+default_language = "en"
+
+
+[markdown]
+
+
+[extra]
+author = "Star Network Team"

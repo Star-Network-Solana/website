@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+    <meta name="description" content="{{ config.description }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Star Network</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://github.com/Star-Network-Solana">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ now() | date(format="%Y") }} Star Network Solana. All rights reserved.</p>
+    </footer>
+</body>
+</html>

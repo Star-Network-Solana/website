@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{ section.title }}</h1>
+        <p>{{ section.content | safe }}</p>
+        <a href="https://github.com/Star-Network-Solana" class="cta-button">View on GitHub</a>
+    </div>
+</section>
+{% endblock content %}

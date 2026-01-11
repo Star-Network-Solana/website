@@ -2,10 +2,15 @@
 
 {% block content %}
 <section id="hero">
-    <div class="hero-left">
+    <div class="container">
         <h1>{{ section.extra.hero.headline }}</h1>
         <p class="hero-subtext">{{ section.extra.hero.subtext }}</p>
-        <p class="hero-supporting">{{ section.extra.hero.supporting_line }}</p>
+
+        <div class="callout">
+            <p><strong>Note:</strong> {{ section.extra.hero.supporting_line }} STAR Network does not provide courses
+                directly; it provides the standards and verification infrastructure.</p>
+        </div>
+
         <div class="cta-group">
             <a href="{{ section.extra.hero.primary_cta.url }}" class="btn btn-primary">{{
                 section.extra.hero.primary_cta.text }}</a>
@@ -13,77 +18,89 @@
                 section.extra.hero.secondary_cta.text }}</a>
         </div>
     </div>
-    <div class="hero-right">
-        <div class="abstract-visual"></div>
-    </div>
 </section>
 
 <section id="problem-solution">
-    <div class="split-col">
-        <div class="col problem">
-            <h2>{{ section.extra.problem_solution.problem_title }}</h2>
-            <ul>
-                {% for point in section.extra.problem_solution.problem_points %}
-                <li>{{ point }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="col solution">
-            <h2>{{ section.extra.problem_solution.solution_title }}</h2>
-            <ul>
-                {% for point in section.extra.problem_solution.solution_points %}
-                <li>{{ point }}</li>
-                {% endfor %}
-            </ul>
+    <div class="container">
+        <hr>
+        <div class="text-grid">
+            <div class="col">
+                <h2>{{ section.extra.problem_solution.problem_title }}</h2>
+                <ul>
+                    {% for point in section.extra.problem_solution.problem_points %}
+                    <li>{{ point }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col">
+                <h2>{{ section.extra.problem_solution.solution_title }}</h2>
+                <ul>
+                    {% for point in section.extra.problem_solution.solution_points %}
+                    <li>{{ point }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="capabilities">
-    <h2>{{ section.extra.capabilities.title }}</h2>
-    <div class="grid-4">
-        {% for item in section.extra.capabilities.items %}
-        <div class="card">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
+    <div class="container">
+        <hr>
+        <h2>{{ section.extra.capabilities.title }}</h2>
+        <div class="text-grid">
+            {% for item in section.extra.capabilities.items %}
+            <div class="list-item">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </section>
 
 <section id="trust-signals">
-    <h2>{{ section.extra.trust_signals.title }}</h2>
-    <div class="trust-list">
-        {% for item in section.extra.trust_signals.items %}
-        <div class="trust-item">{{ item }}</div>
-        {% endfor %}
+    <div class="container">
+        <hr>
+        <h2>{{ section.extra.trust_signals.title }}</h2>
+        <ul class="trust-signals-list">
+            {% for item in section.extra.trust_signals.items %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
 
 <section id="audience">
-    <h2>{{ section.extra.audience.title }}</h2>
-    <div class="grid-4">
-        {% for item in section.extra.audience.items %}
-        <div class="card">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
+    <div class="container">
+        <hr>
+        <h2>{{ section.extra.audience.title }}</h2>
+        <div class="text-grid">
+            {% for item in section.extra.audience.items %}
+            <div class="list-item">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </section>
 
 <section id="mission">
-    <div class="mission-text">
-        <p>{{ section.extra.mission.text }}</p>
+    <div class="container" style="text-align: center; margin-top: 4rem;">
+        <hr>
+        <p style="font-size: 1.2rem; font-weight: 500; color: var(--text-primary);">{{ section.extra.mission.text }}</p>
     </div>
 </section>
 
-<section id="cta-band">
-    <h2>{{ section.extra.primary_cta_band.headline }}</h2>
-    <div class="cta-grid">
-        {% for btn in section.extra.primary_cta_band.buttons %}
-        <a href="{{ btn.url }}" class="btn btn-outline">{{ btn.text }}</a>
-        {% endfor %}
+<section id="cta-band" style="background: var(--block-bg); margin-top: 4rem; padding: 4rem 1.5rem; text-align: center;">
+    <div class="container">
+        <h2 style="border-bottom: none; margin-bottom: 2rem;">{{ section.extra.primary_cta_band.headline }}</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            {% for btn in section.extra.primary_cta_band.buttons %}
+            <a href="{{ btn.url }}" class="btn btn-secondary" style="background: #fff;">{{ btn.text }}</a>
+            {% endfor %}
+        </div>
     </div>
 </section>
 {% endblock content %}

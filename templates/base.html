@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-    <link rel="stylesheet" href="/website/style.css?v=5">
+    <link rel="stylesheet" href="/website/style.css?v=6">
     <meta name="description" content="{{ config.description }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Using Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="/website/">STAR Network</a>
-        </div>
-        <nav class="primary-nav">
-            <ul>
-                {% for item in config.extra.menu_items %}
-                <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        <div class="container">
+            <div class="logo">
+                <a href="/website/">STAR Network</a>
+            </div>
+            <nav class="primary-nav">
+                <ul>
+                    {% for item in config.extra.menu_items %}
+                    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            <div class="utility-nav">
+                {% for item in config.extra.utility_items %}
+                {% if item.class == "primary" %}
+                <a href="{{ item.url }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">{{
+                    item.name }}</a>
+                {% else %}
+                <a href="{{ item.url }}" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">{{
+                    item.name }}</a>
+                {% endif %}
                 {% endfor %}
-            </ul>
-        </nav>
-        <div class="utility-nav">
-            {% for item in config.extra.utility_items %}
-            <a href="{{ item.url }}" class="btn-nav {{ item.class }}">{{ item.name }}</a>
-            {% endfor %}
+            </div>
         </div>
     </header>
 
@@ -34,26 +43,27 @@
     </main>
 
     <footer>
-        <div class="footer-col">
-            <p><strong>STAR Network</strong></p>
-            <p>The Trust Layer for Rust Education</p>
-        </div>
-        <div class="footer-col">
-            <h3>Resources</h3>
-            <ul>
-                <li><a href="#standards">Standards</a></li>
-                <li><a href="#registry">Registry</a></li>
-                <li><a href="#governance">Governance</a></li>
-                <li><a href="#">Documentation</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Connect</h3>
-            <ul>
-                <li><a href="https://github.com/Star-Network-Solana">GitHub</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Legal / License</a></li>
-            </ul>
+        <div class="footer-row">
+            <div class="footer-col" style="max-width: 300px;">
+                <h4>STAR Network</h4>
+                <p style="font-size: 0.9rem; margin: 0; color: var(--text-secondary);">The Trust Layer for Rust
+                    Education.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Standards</h4>
+                <ul>
+                    <li><a href="#standards">Protocol</a></li>
+                    <li><a href="#registry">Registry</a></li>
+                    <li><a href="#governance">Governance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://github.com/Star-Network-Solana">GitHub</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

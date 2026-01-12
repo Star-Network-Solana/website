@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Elena Vance",
+    "focus": "Rust Pedagogy & Safety",
+    "exp_years": 8,
+    "verified": true,
+    "last_review": "2026-01-10",
+    "governance_notes": "No active disputes.",
+    "status": "Verified"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Thorne",
+    "focus": "Solana Protocol Engineering",
+    "exp_years": 5,
+    "verified": true,
+    "last_review": "2025-12-05",
+    "governance_notes": "Maintains 2 active open source libraries.",
+    "status": "Verified"
+  },
+  {
+    "id": 3,
+    "name": "Sarah Chen",
+    "focus": "ZK Compression & Math",
+    "exp_years": 4,
+    "verified": true,
+    "last_review": "2026-01-02",
+    "governance_notes": "Academic partnership lead.",
+    "status": "Verified"
+  },
+  {
+    "id": 4,
+    "name": "David Okonjo",
+    "focus": "Enterprise Systems",
+    "exp_years": 10,
+    "verified": true,
+    "last_review": "2025-11-20",
+    "governance_notes": "Authorized for corporate training.",
+    "status": "Verified"
+  },
+  {
+    "id": 5,
+    "name": "Alex V.",
+    "focus": "Security Auditing",
+    "exp_years": 6,
+    "verified": true,
+    "last_review": "2025-12-15",
+    "governance_notes": "Whitehat contributor.",
+    "status": "Verified"
+  },
+  {
+    "id": 6,
+    "name": "Project Luminous",
+    "focus": "Bootcamp Provider",
+    "exp_years": 3,
+    "verified": false,
+    "last_review": "Pending",
+    "governance_notes": "Application under review.",
+    "status": "Pending Review"
+  }
+]

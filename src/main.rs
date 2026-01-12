@@ -1,3 +1,7 @@
+// STAR Network is a trust-first institutional project.
+// All features must prioritize transparency, neutrality,
+// and auditability over growth or automation.
+
 use leptos::*;
 
 mod app;

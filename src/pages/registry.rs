@@ -1,68 +1,24 @@
 use leptos::*;
+use serde::{Deserialize, Serialize};
 
-#[derive(Clone)]
-struct Trainer {
-    id: u32,
-    name: &'static str,
-    focus: &'static str,
-    exp_years: u8,
-    verified: bool,
-    last_review: &'static str,
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct Trainer {
+    pub id: u32,
+    pub name: String,
+    pub focus: String,
+    pub exp_years: u8,
+    pub verified: bool,
+    pub last_review: String,
+    pub governance_notes: String,
+    pub status: String,
 }
 
 #[component]
 pub fn Registry() -> impl IntoView {
-    // Mock Data
-    let trainers = vec![
-        Trainer {
-            id: 1,
-            name: "Dr. Elena Vance",
-            focus: "Rust Pedagogy & Safety",
-            exp_years: 8,
-            verified: true,
-            last_review: "2026-01-10",
-        },
-        Trainer {
-            id: 2,
-            name: "Marcus Thorne",
-            focus: "Solana Protocol Engineering",
-            exp_years: 5,
-            verified: true,
-            last_review: "2025-12-05",
-        },
-        Trainer {
-            id: 3,
-            name: "Sarah Chen",
-            focus: "ZK Compression & Math",
-            exp_years: 4,
-            verified: true,
-            last_review: "2026-01-02",
-        },
-        Trainer {
-            id: 4,
-            name: "David Okonjo",
-            focus: "Enterprise Systems",
-            exp_years: 10,
-            verified: true,
-            last_review: "2025-11-20",
-        },
-        Trainer {
-            id: 5,
-            name: "Alex V.",
-            focus: "Security Auditing",
-            exp_years: 6,
-            verified: true,
-            last_review: "2025-12-15",
-        },
-        Trainer {
-            id: 6,
-            name: "Project Luminous",
-            focus: "Bootcamp Provider",
-            exp_years: 3,
-            verified: false,
-            last_review: "Pending",
-        },
-    ];
+    // Embedded Static Data (Audit Link: public/trainers.json)
+    let trainers_json = include_str!("../../public/trainers.json");
+    let trainers: Vec<Trainer> =
+        serde_json::from_str(trainers_json).expect("Failed to load static registry data");
 
     view! {
         <section style="padding-top: 4rem;">

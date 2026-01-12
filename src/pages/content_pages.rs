@@ -79,6 +79,7 @@ pub fn Educators() -> impl IntoView {
                    <div style="border: 1px solid var(--color-border); padding: 2rem;">
                        <h3>"High-Signal Visibility"</h3>
                        <p>"Stand out from bootcamps with verified credentials."</p>
+                       // DEFERRED: Trainer dashboard and analytics deferred to v2.
                    </div>
                    <div style="border: 1px solid var(--color-border); padding: 2rem;">
                         <h3>"Independence Guarantees"</h3>
@@ -92,7 +93,7 @@ pub fn Educators() -> impl IntoView {
 
                 <div style="text-align: center; padding: 4rem 0; background: var(--color-surface); border-radius: 8px;">
                      <h3 style="color: white; margin-bottom: 2rem;">"Ready to Verify?"</h3>
-                     <a href="#" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">"Request Registry Review"</a>
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">"Request Registry Review"</a>
                 </div>
              </div>
         </section>
@@ -116,7 +117,7 @@ pub fn Enterprises() -> impl IntoView {
                     <p>"Every verified educator has passed rigorous technical and pedagogical audits. We reduce your risk to zero."</p>
                 </div>
 
-                <a href="#" class="btn btn-primary">"Request Vetted Educators"</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">"Request Vetted Educators"</a>
             </div>
         </section>
     }
@@ -160,6 +161,7 @@ pub fn About() -> impl IntoView {
                     <div>
                         <h3>"Governance Structure"</h3>
                         <p>"Operated by an elected council of educators and core engineers. Decisions are public and open for transparent review."</p>
+                        // DEFERRED: On-chain governance voting modules deferred until institutional maturity.
                     </div>
                     <div>
                          <h3>"Phased Roadmap"</h3>

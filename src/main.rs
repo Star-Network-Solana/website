@@ -2,6 +2,7 @@ use leptos::*;
 
 mod app;
 pub mod components;
+pub mod pages;
 use app::*;
 
 fn main() {

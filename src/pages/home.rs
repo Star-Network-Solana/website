@@ -16,8 +16,8 @@ pub fn Home() -> impl IntoView {
                     "An independent initiative building registry-based trust and verification frameworks for Solana and Rust educators."
                 </p>
                 <div style="display: flex; gap: 1rem;">
-                    <a href="/registry" class="btn btn-muted">"Explore the Registry"</a>
-                    <a href="/how-it-works" class="btn btn-muted">"How STAR Works"</a>
+                    <a href="/website/registry" class="btn btn-muted">"Explore the Registry"</a>
+                    <a href="/website/how-it-works" class="btn btn-muted">"How STAR Works"</a>
                 </div>
             </div>
         </section>

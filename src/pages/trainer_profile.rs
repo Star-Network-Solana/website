@@ -13,7 +13,7 @@ pub fn TrainerProfile() -> impl IntoView {
     view! {
         <section style="padding-top: 4rem;">
             <div class="container">
-                <a href="/registry" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; color: var(--color-text-sub); font-size: 0.9rem;">
+                <a href="/website/registry" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; color: var(--color-text-sub); font-size: 0.9rem;">
                     "← Back to Registry"
                 </a>
 

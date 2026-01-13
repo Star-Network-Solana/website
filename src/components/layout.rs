@@ -67,17 +67,17 @@ pub fn Footer() -> impl IntoView {
                     <div style="flex: 1; min-width: 250px;">
                         <h4 style="color: white; margin-bottom: 1rem;">"STAR Network"</h4>
                         <p style="font-size: 0.9rem; line-height: 1.6; max-width: 320px; color: var(--color-text-sub);">
-                            "The institutional trust layer for Solana & Rust education. Establishing neutral verification and open standards for the global ecosystem."
+                            "An independent professional association initiative building trust and verification frameworks for Solana and Rust education."
                         </p>
                     </div>
 
                     // Links Column
                     <div style="display: flex; gap: 4rem;">
                         <div>
-                            <h5 style="color: white; font-size: 0.9rem; letter-spacing: 0.05em; margin-bottom: 1.5rem;">"Governance"</h5>
+                            <h5 style="color: white; font-size: 0.9rem; letter-spacing: 0.05em; margin-bottom: 1.5rem;">"Coordination"</h5>
                             <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
                                 <a href="/transparency" style="color: var(--color-text-sub);">"Transparency"</a>
-                                <a href="/governance" style="color: var(--color-text-sub);">"Governance Structure"</a>
+                                <a href="/governance" style="color: var(--color-text-sub);">"Coordination Structure"</a>
                                 <a href="/ethics" style="color: var(--color-text-sub);">"Code of Ethics"</a>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ pub fn Footer() -> impl IntoView {
                 </div>
 
                 <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: left; font-size: 0.85rem;">
-                    "© 2026 STAR Network. A Non-Profit Standards Body."
+                    "© 2026 STAR Network. Independent Professional Association Initiative."
                 </div>
             </div>
         </footer>

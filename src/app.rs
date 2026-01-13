@@ -13,6 +13,7 @@ pub fn App() -> impl IntoView {
             <main>
                 <Header />
                 <Routes>
+                    <Route path="/website" view=Home />
                     <Route path="/website/" view=Home />
                     <Route path="/website/registry" view=Registry />
                     <Route path="/website/registry/:id" view=TrainerProfile />

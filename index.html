@@ -9,6 +9,18 @@
         content="STAR Network is an independent professional association initiative building trust, transparency, and shared quality frameworks for Solana and Rust education.">
     <link data-trunk rel="css" href="public/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        // Restore the original path after 404 redirect
+        (function () {
+            var redirect = sessionStorage.getItem('redirect');
+            if (redirect && redirect !== '/website/') {
+                sessionStorage.removeItem('redirect');
+                // Replace the base path and navigate via pushState
+                var path = redirect.replace('/website', '');
+                history.replaceState(null, null, '/website' + path);
+            }
+        })();
+    </script>
 </head>
 
 <body>

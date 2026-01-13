@@ -9,7 +9,7 @@ use leptos_router::*;
 #[component]
 pub fn App() -> impl IntoView {
     view! {
-        <Router>
+        <Router base="/website">
             <main>
                 <Header />
                 <Routes>

@@ -9,19 +9,19 @@ use leptos_router::*;
 #[component]
 pub fn App() -> impl IntoView {
     view! {
-        <Router base="/website">
+        <Router>
             <main>
                 <Header />
                 <Routes>
-                    <Route path="/" view=Home />
-                    <Route path="/registry" view=Registry />
-                    <Route path="/registry/:id" view=TrainerProfile />
-                    <Route path="/how-it-works" view=HowItWorks />
-                    <Route path="/standards" view=Standards />
-                    <Route path="/educators" view=Educators />
-                    <Route path="/enterprises" view=Enterprises />
-                    <Route path="/insights" view=Insights />
-                    <Route path="/about" view=About />
+                    <Route path="/website/" view=Home />
+                    <Route path="/website/registry" view=Registry />
+                    <Route path="/website/registry/:id" view=TrainerProfile />
+                    <Route path="/website/how-it-works" view=HowItWorks />
+                    <Route path="/website/standards" view=Standards />
+                    <Route path="/website/educators" view=Educators />
+                    <Route path="/website/enterprises" view=Enterprises />
+                    <Route path="/website/insights" view=Insights />
+                    <Route path="/website/about" view=About />
                 </Routes>
                 <Footer />
             </main>

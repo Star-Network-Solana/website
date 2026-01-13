@@ -13,7 +13,7 @@ pub fn Home() -> impl IntoView {
                     "Visible Truth. Verifiable Talent."
                 </h2>
                 <p style="font-size: 1.25rem; max-width: 720px; color: var(--color-text-sub); margin-bottom: 3rem;">
-                    "A neutral registry and standards body making Solana education reliable at global scale."
+                    "An independent initiative building registry-based trust and verification frameworks for Solana and Rust educators."
                 </p>
                 <div style="display: flex; gap: 1rem;">
                     <a href="/registry" class="btn btn-muted">"Explore the Registry"</a>
@@ -53,13 +53,13 @@ pub fn Home() -> impl IntoView {
                     <h3 style="color: var(--color-accent); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem;">"STAR IS"</h3>
                     <ul style="list-style: none; padding: 0; color: white; font-size: 1.25rem; display: flex; flex-direction: column; gap: 1.5rem;">
                         <li style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="color: var(--color-accent)">"✔"</span> "A verification registry"
+                            <span style="color: var(--color-accent)">"✔"</span> "A registry & verification framework"
                         </li>
                         <li style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="color: var(--color-accent)">"✔"</span> "A standards authority"
+                            <span style="color: var(--color-accent)">"✔"</span> "An independent professional association"
                         </li>
                         <li style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="color: var(--color-accent)">"✔"</span> "A coordination layer"
+                            <span style="color: var(--color-accent)">"✔"</span> "A neutral coordination layer"
                         </li>
                     </ul>
                 </div>
@@ -108,7 +108,7 @@ pub fn Home() -> impl IntoView {
 
                     <div>
                         <div style="font-size: 0.9rem; color: var(--color-accent); margin-bottom: 0.5rem; font-family: var(--font-mono);">"04"</div>
-                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">"Governance"</h4>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">"Coordination"</h4>
                         <p style="font-size: 0.95rem; color: var(--color-text-sub);">"Blockchain registry."</p>
                     </div>
 

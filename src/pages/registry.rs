@@ -27,8 +27,14 @@ pub fn Registry() -> impl IntoView {
                 <div style="margin-bottom: 4rem;">
                     <h1>"Verified Educator Registry"</h1>
                     <p style="font-size: 1.1rem; max-width: 800px; color: var(--color-text-sub);">
-                        "The STAR Registry documents verified Solana and Rust educators based on real experience, human review, and continuous signals. Neutral. Transparent. Immutable."
+                        "The STAR Registry documents Solana and Rust educators based on publicly verifiable experience, human review, and transparent criteria. Registry inclusion reflects observed expertise and teaching background — it is not a license, endorsement, or guarantee."
                     </p>
+                    <div style="background: rgba(255, 165, 0, 0.1); border-left: 4px solid orange; padding: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
+                         <p style="color: orange; font-weight: bold; margin-bottom: 0.5rem;">"Important:"</p>
+                         <p style="color: var(--color-text-sub); margin: 0;">
+                            "The STAR Registry is a verification and discovery tool. It does not represent formal accreditation, employment endorsement, or official certification."
+                         </p>
+                    </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 250px 1fr; gap: 4rem; align-items: start;">

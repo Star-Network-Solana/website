@@ -10,7 +10,7 @@ pub fn HowItWorks() -> impl IntoView {
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
                     <div>
                         <h3>"Why Trust is Broken"</h3>
-                         <p>"The current education ecosystem is fragmented. Verifying quality requires manual effort, and certificates are easily forged or become outdated."</p>
+                         <p>"STAR Network exists to address a fundamental trust gap in Solana and Rust education: the lack of a neutral, verifiable way to assess educator quality and real-world teaching experience."</p>
                     </div>
                 </div>
 
@@ -35,11 +35,14 @@ pub fn Standards() -> impl IntoView {
     view! {
         <section style="padding-top: 4rem;">
             <div class="container">
-                <h1 style="margin-bottom: 2rem;">"Standards & Accreditation"</h1>
+                <div style="margin-bottom: 2rem; background: rgba(255, 255, 255, 0.05); padding: 0.5rem 1rem; display: inline-block; border-radius: 4px;">
+                     <span style="color: var(--color-accent); font-weight: 500;">"Status: Frameworks in development — not yet formal standards."</span>
+                </div>
+                <h1 style="margin-bottom: 2rem;">"Quality Frameworks & Standards (In Development)"</h1>
 
                 <div style="margin-bottom: 4rem;">
                     <h3>"Definition of Quality"</h3>
-                    <p>"Educational quality is defined by factual accuracy, pedagogical effectiveness, and safety-first coding practices."</p>
+                    <p>"STAR Network is developing shared quality frameworks to support consistent, transparent evaluation of Solana and Rust education. These frameworks are informed by ongoing registry data, educator feedback, and ecosystem needs, and will evolve over time."</p>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
@@ -71,9 +74,12 @@ pub fn Educators() -> impl IntoView {
         <section style="padding-top: 4rem;">
              <div class="container">
                 <h1 style="margin-bottom: 1rem;">"For Educators"</h1>
-                <p style="font-size: 1.2rem; color: var(--color-text-sub); margin-bottom: 4rem; max-width: 800px;">
-                    "Join the registry to prove your expertise and gain access to enterprise training opportunities."
+                <p style="font-size: 1.2rem; color: var(--color-text-sub); margin-bottom: 2rem; max-width: 800px;">
+                    "STAR Network provides educators with a neutral way to make their real teaching and technical experience visible — without exclusivity or loss of independence."
                 </p>
+                 <div style="background: rgba(100, 149, 237, 0.1); border: 1px solid rgba(100, 149, 237, 0.3); padding: 1.5rem; border-radius: 8px; margin-bottom: 4rem;">
+                    <p style="color: white; margin: 0;">"Participation in STAR Network does not limit independent work, pricing, or affiliations."</p>
+                </div>
 
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;">
                    <div style="border: 1px solid var(--color-border); padding: 2rem;">
@@ -109,12 +115,12 @@ pub fn Enterprises() -> impl IntoView {
 
                 <div style="margin-bottom: 4rem;">
                      <h3>"Why Training Fails"</h3>
-                     <p>"Most internal training programs lack structure, and hiring external trainers is a gamble on quality."</p>
+                     <p>"STAR Network helps enterprises reduce risk by making educator experience and verification criteria transparent — not by replacing due diligence."</p>
                 </div>
 
                 <div style="margin-bottom: 4rem;">
                     <h3>"The STAR Guarantee"</h3>
-                    <p>"Every verified educator has passed rigorous technical and pedagogical audits. We reduce your risk to zero."</p>
+                    <p>"STAR Network does not guarantee outcomes, performance, or suitability for specific use cases."</p>
                 </div>
 
                 <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">"Request Vetted Educators"</a>
@@ -128,7 +134,10 @@ pub fn Insights() -> impl IntoView {
     view! {
           <section style="padding-top: 4rem;">
             <div class="container">
-                <h1 style="margin-bottom: 4rem;">"Insights"</h1>
+                <h1 style="margin-bottom: 2rem;">"Insights"</h1>
+                <p style="font-size: 1.1rem; color: var(--color-text-sub); margin-bottom: 4rem; max-width: 800px;">
+                    "STAR Network publishes research, analysis, and perspectives on Solana and Rust education, pedagogy, and ecosystem skill gaps."
+                </p>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
                     <div class="content-card">
@@ -154,13 +163,24 @@ pub fn About() -> impl IntoView {
              <div class="container">
                 <div style="margin-bottom: 4rem; max-width: 800px;">
                     <h1 style="margin-bottom: 1.5rem;">"About STAR Network"</h1>
-                    <p style="font-size: 1.1rem;">"We are a non-profit standards body dedicated to the professionalization of the Solana and Rust education sector."</p>
+                    <p style="font-size: 1.1rem;">"STAR Network is an independent professional association initiative formed to address trust, verification, and quality gaps in Solana and Rust education."</p>
+
+                    <div style="margin-top: 2rem; padding: 2rem; background: rgba(255, 255, 255, 0.03); border-radius: 8px;">
+                        <h4 style="margin-bottom: 1rem; color: white;">"Status & Scope"</h4>
+                        <ul style="list-style: none; padding: 0; line-height: 1.8; color: var(--color-text-sub);">
+                            <li><strong style="color: var(--color-text-inv);">"Current Status:"</strong> " Independent professional association initiative"</li>
+                            <li><strong style="color: var(--color-text-inv);">"Legal Structure:"</strong> " In formation"</li>
+                            <li><strong style="color: var(--color-text-inv);">"Primary Focus (2026):"</strong> " Trainer registry, verification frameworks, and quality standards development"</li>
+                            <li><strong style="color: var(--color-text-inv);">"Accreditation Authority:"</strong> " Emerging (future-state)"</li>
+                            <li><strong style="color: var(--color-text-inv);">"Commercial Interest:"</strong> " Neutral, trainer-first, non-exclusive"</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
                     <div>
-                        <h3>"Governance Structure"</h3>
-                        <p>"Operated by an elected council of educators and core engineers. Decisions are public and open for transparent review."</p>
+                        <h3>"Coordination Structure"</h3>
+                        <p>"Facilitated by a council of educators and core engineers. Decisions are public and open for transparent review."</p>
                         // DEFERRED: On-chain governance voting modules deferred until institutional maturity.
                     </div>
                     <div>

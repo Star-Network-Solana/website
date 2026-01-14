@@ -7,7 +7,7 @@ pub fn HowItWorks() -> impl IntoView {
             <div class="container">
                 <h1 style="margin-bottom: 2rem;">"How STAR Works"</h1>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                <div class="grid-responsive-2" style="margin-bottom: 4rem;">
                     <div>
                         <h3>"Why Trust is Broken"</h3>
                          <p>"STAR Network exists to address a fundamental trust gap in Solana and Rust education: the lack of a neutral, verifiable way to assess educator quality and real-world teaching experience."</p>
@@ -45,7 +45,7 @@ pub fn Standards() -> impl IntoView {
                     <p>"STAR Network is developing shared quality frameworks to support consistent, transparent evaluation of Solana and Rust education. These frameworks are informed by ongoing registry data, educator feedback, and ecosystem needs, and will evolve over time."</p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div class="grid-responsive-2">
                     <div style="background: var(--color-surface); padding: 2rem; color: white; border-radius: 8px;">
                         <h4 style="color: var(--color-accent); margin-bottom: 1rem;">"What We Measure"</h4>
                         <ul style="line-height: 1.6;">
@@ -81,7 +81,7 @@ pub fn Educators() -> impl IntoView {
                     <p style="color: white; margin: 0;">"Participation in STAR Network does not limit independent work, pricing, or affiliations."</p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;">
+                <div class="grid-responsive-3" style="margin-bottom: 4rem;">
                    <div style="border: 1px solid var(--color-border); padding: 2rem;">
                        <h3>"High-Signal Visibility"</h3>
                        <p>"Stand out from bootcamps with verified credentials."</p>
@@ -177,7 +177,7 @@ pub fn About() -> impl IntoView {
                     </div>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                <div class="grid-responsive-2" style="margin-bottom: 4rem;">
                     <div>
                         <h3>"Coordination Structure"</h3>
                         <p>"Facilitated by a council of educators and core engineers. Decisions are public and open for transparent review."</p>

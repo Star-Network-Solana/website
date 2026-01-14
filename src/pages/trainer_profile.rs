@@ -31,7 +31,7 @@ pub fn TrainerProfile() -> impl IntoView {
                     </div>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 1fr 300px; gap: 4rem;">
+                <div class="flex-responsive" style="align-items: start;">
                     // Main Content
                     <div>
                         // 1. Overview

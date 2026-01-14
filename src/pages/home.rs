@@ -47,7 +47,7 @@ pub fn Home() -> impl IntoView {
 
         // Section 3: What STAR Is / Is Not
         <section>
-            <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem;">
+            <div class="container grid-responsive-2" style="gap: 6rem;">
                 // STAR IS
                 <div>
                     <h3 style="color: var(--color-accent); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem;">"STAR IS"</h3>
@@ -86,7 +86,7 @@ pub fn Home() -> impl IntoView {
         <section style="background: rgba(255, 255, 255, 0.02); border-top: 1px solid var(--color-border-dark); border-bottom: 1px solid var(--color-border-dark);">
             <div class="container">
                 <h2 style="margin-bottom: 4rem; text-align: left;">"The Trust Protocol"</h2>
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+                <div class="grid-responsive-4">
 
                     <div>
                         <div style="font-size: 0.9rem; color: var(--color-accent); margin-bottom: 0.5rem; font-family: var(--font-mono);">"01"</div>

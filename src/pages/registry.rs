@@ -47,9 +47,9 @@ pub fn Registry() -> impl IntoView {
                     </div>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 250px 1fr; gap: 4rem; align-items: start;">
+                <div class="flex-responsive" style="align-items: start;">
                     // Section 2: Filter Panel
-                    <aside style="background: var(--color-surface); padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 8px;">
+                    <aside style="background: var(--color-surface); padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 8px; min-width: 250px; flex-shrink: 0;">
                         <h4 style="margin-bottom: 1.5rem; color: white;">"Filters"</h4>
 
                         <div style="display: flex; flex-direction: column; gap: 2rem;">
@@ -106,7 +106,7 @@ pub fn Registry() -> impl IntoView {
                     </aside>
 
                     // Section 3: Trainer Grid
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div style="flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem;">
                         {trainers.into_iter().map(|trainer| {
                             view! {
                                 <a href=format!("/registry/{}", trainer.id) class="card" style="text-decoration: none; display: block; position: relative; overflow: hidden;">

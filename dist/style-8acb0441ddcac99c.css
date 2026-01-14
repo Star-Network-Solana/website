@@ -145,15 +145,156 @@ section {
 }
 
 /* Card / Content Area - Light Backgrounds per spec "Content background: #F8F9FA" */
-.content-card {
+.card {
     background: var(--color-content);
     color: var(--color-text-main);
     padding: 2rem;
     border: 1px solid var(--color-border);
 }
 
-.content-card h1,
-.content-card h2,
-.content-card h3 {
+.card h1,
+.card h2,
+.card h3 {
     color: var(--color-text-main);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - Mobile First
+   ============================================ */
+
+/* Mobile-specific optimizations (default/base styles) */
+@media (max-width: 768px) {
+
+    /* Reduce container padding on mobile */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Reduce section padding on mobile */
+    section {
+        padding: 3rem 0;
+    }
+
+    /* Slightly smaller headings on mobile */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Ensure paragraphs don't get too wide constraints on mobile */
+    p {
+        max-width: 100%;
+    }
+
+    /* Make buttons full-width on very small screens */
+    @media (max-width: 480px) {
+        .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    /* Increase touch target size for mobile */
+    .btn {
+        min-height: 44px;
+        padding: 0.875rem 1.5rem;
+    }
+
+    /* Mobile utility: hide on mobile */
+    .mobile-hide {
+        display: none !important;
+    }
+
+    /* Mobile utility: stack grids */
+    .grid-responsive-2,
+    .grid-responsive-3,
+    .grid-responsive-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Mobile header adjustments */
+    header .container {
+        padding: 0 1rem;
+    }
+
+    /* Mobile footer: stack columns */
+    footer .container>div {
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+
+    footer .container>div>div:last-child {
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+}
+
+/* Tablet optimizations (641px - 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+
+    /* 2-column grid on tablet for 3 and 4 column layouts */
+    .grid-responsive-3,
+    .grid-responsive-4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Desktop styles (769px and up) */
+@media (min-width: 769px) {
+
+    /* Desktop utility: hide on desktop */
+    .desktop-hide {
+        display: none !important;
+    }
+
+    /* Responsive grid classes for desktop */
+    .grid-responsive-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .grid-responsive-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .grid-responsive-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Large desktop (1200px+) - maintain current design */
+@media (min-width: 1200px) {
+    /* Existing desktop styles work well here */
+}
+
+/* Utility class for responsive flex layouts */
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .flex-responsive {
+        flex-direction: column;
+    }
+}
+
+/* Responsive text alignment */
+@media (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center;
+    }
 }

@@ -25,9 +25,19 @@ pub fn Registry() -> impl IntoView {
             <div class="container">
                 // Section 1: Intro
                 <div style="margin-bottom: 4rem;">
-                    <h1>"Verified Educator Registry"</h1>
+                    // Demo Data Banner
+                    <div style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.15) 100%); border: 2px dashed rgba(138, 43, 226, 0.5); padding: 1.5rem; margin-bottom: 2rem; border-radius: 8px; text-align: center;">
+                        <p style="font-size: 1.3rem; font-weight: bold; color: #9d7cdb; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">
+                            "📋 Sample Data Preview"
+                        </p>
+                        <p style="color: var(--color-text-inv); margin: 0; font-size: 0.95rem;">
+                            "The profiles below are illustrative examples. The STAR Registry is under development — actual verified educators will be listed upon launch."
+                        </p>
+                    </div>
+
+                    <h1>"Verified Educator Registry "<span style="color: var(--color-text-sub); font-size: 0.7em; font-weight: normal;">"(Sample Preview)"</span></h1>
                     <p style="font-size: 1.1rem; max-width: 800px; color: var(--color-text-sub);">
-                        "The STAR Registry documents Solana and Rust educators based on publicly verifiable experience, human review, and transparent criteria. Registry inclusion reflects observed expertise and teaching background — it is not a license, endorsement, or guarantee."
+                        "The STAR Registry will document Solana and Rust educators based on publicly verifiable experience, human review, and transparent criteria. Registry inclusion will reflect observed expertise and teaching background — it is not a license, endorsement, or guarantee."
                     </p>
                     <div style="background: rgba(255, 165, 0, 0.1); border-left: 4px solid orange; padding: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
                          <p style="color: orange; font-weight: bold; margin-bottom: 0.5rem;">"Important:"</p>
@@ -100,7 +110,12 @@ pub fn Registry() -> impl IntoView {
                         {trainers.into_iter().map(|trainer| {
                             view! {
                                 <a href=format!("/registry/{}", trainer.id) class="card" style="text-decoration: none; display: block; position: relative; overflow: hidden;">
-                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                    // Sample Watermark
+                                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-25deg); font-size: 3rem; font-weight: bold; color: rgba(138, 43, 226, 0.08); pointer-events: none; user-select: none; z-index: 0; white-space: nowrap;">
+                                        "SAMPLE"
+                                    </div>
+
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem; position: relative; z-index: 1;">
                                         <h3 style="font-size: 1.25rem; margin: 0; color: white;">{trainer.name}</h3>
                                         {if trainer.verified {
                                             view! { <span style="background: rgba(20, 241, 149, 0.1); color: var(--color-accent); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; border: 1px solid rgba(20, 241, 149, 0.2);">"VERIFIED"</span> }
@@ -109,12 +124,12 @@ pub fn Registry() -> impl IntoView {
                                         }}
                                     </div>
 
-                                    <div style="margin-bottom: 1.5rem;">
+                                    <div style="margin-bottom: 1.5rem; position: relative; z-index: 1;">
                                         <div style="font-size: 0.85rem; color: var(--color-text-sub); margin-bottom: 0.25rem;">"Focus"</div>
                                         <div style="color: var(--color-text-inv); font-weight: 500;">{trainer.focus}</div>
                                     </div>
 
-                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.85rem;">
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.85rem; position: relative; z-index: 1;">
                                         <div>
                                             <div style="color: var(--color-text-sub); margin-bottom: 0.25rem;">"Experience"</div>
                                             <div style="color: white;">{trainer.exp_years} " Years"</div>

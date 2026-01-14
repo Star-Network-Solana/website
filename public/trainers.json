@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Dr. Elena Vance",
+    "name": "Dr. Elena Vance (Sample)",
     "focus": "Rust Pedagogy & Safety",
     "exp_years": 8,
     "verified": true,
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "name": "Marcus Thorne",
+    "name": "Marcus Thorne (Sample)",
     "focus": "Solana Protocol Engineering",
     "exp_years": 5,
     "verified": true,
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "name": "Sarah Chen",
+    "name": "Sarah Chen (Sample)",
     "focus": "ZK Compression & Math",
     "exp_years": 4,
     "verified": true,
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "name": "David Okonjo",
+    "name": "David Okonjo (Sample)",
     "focus": "Enterprise Systems",
     "exp_years": 10,
     "verified": true,
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "name": "Alex V.",
+    "name": "Alex V. (Sample)",
     "focus": "Security Auditing",
     "exp_years": 6,
     "verified": true,
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "name": "Project Luminous",
+    "name": "Project Luminous (Sample)",
     "focus": "Bootcamp Provider",
     "exp_years": 3,
     "verified": false,

@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Trust Layer for Rust Education | STAR Network</title>
     <meta name="description"
-        content="Accreditation, verification, and open standards that make Rust training credible, transparent, and reliable.">
-    <link rel="stylesheet" href="/website/style-9df0c9a17ae2ef8f.css" integrity="sha384-5JIbe25+FTEG5LLczri82r+nt0uc5wGKvNODJiT5lYUpmyZ409riWMCz8mZe2xVi"/>
+        content="STAR Network is an independent professional association initiative building trust, transparency, and shared quality frameworks for Solana and Rust education.">
+    <link rel="stylesheet" href="/website/style-3ceeec849ce061e1.css" integrity="sha384-PJoiqa9z4SH+1eLZPdAfoZjNskr3MHbvZjPWpJq8ZaVYTxKMs2GM4GTyV/e1AcdL"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="modulepreload" href="/website/star-network-website-10a247b446a438da.js" crossorigin="anonymous" integrity="sha384-yfFiPJaqMYPIdgqnoBeNRKmybpzzVUk8LOu/v9rYfs5ftO8xkRNt6czk6ItSlKT4"><link rel="preload" href="/website/star-network-website-10a247b446a438da_bg.wasm" crossorigin="anonymous" integrity="sha384-YodRRudxHfReItGfRAB3cpYs4jd0a1hXOpfmzBz1G75xQAoB3yXIdOQttCpPygbc" as="fetch" type="application/wasm"></head>
+    <script>
+        // Restore the original path after 404 redirect
+        (function () {
+            var redirect = sessionStorage.getItem('redirect');
+            if (redirect && redirect !== '/website/') {
+                sessionStorage.removeItem('redirect');
+                // Replace the base path and navigate via pushState
+                var path = redirect.replace('/website', '');
+                history.replaceState(null, null, '/website' + path);
+            }
+        })();
+    </script>
+<link rel="modulepreload" href="/website/star-network-website-8da40ace4bfe4af7.js" crossorigin="anonymous" integrity="sha384-EoLdtkDyrEGjyfj6QqOhqtv4kE9ctYcDiA7dDSjIj1vtes67e16bOZK5kbhgUNs7"><link rel="preload" href="/website/star-network-website-8da40ace4bfe4af7_bg.wasm" crossorigin="anonymous" integrity="sha384-oSlCYQedpYqSu4VEjlyRLvDRTrPbLMfBEw7TnuPpwaF7CUZkzBWFZJ5xOmXkBh5w" as="fetch" type="application/wasm"></head>
 
 <body>
 
 <script type="module">
-import init, * as bindings from '/website/star-network-website-10a247b446a438da.js';
-const wasm = await init({ module_or_path: '/website/star-network-website-10a247b446a438da_bg.wasm' });
+import init, * as bindings from '/website/star-network-website-8da40ace4bfe4af7.js';
+const wasm = await init({ module_or_path: '/website/star-network-website-8da40ace4bfe4af7_bg.wasm' });
 
 
 window.wasmBindings = bindings;

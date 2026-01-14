@@ -1,0 +1,159 @@
+/* STAR Network "Institutional Trust" Theme */
+
+:root {
+    /* Palette */
+    --color-primary: #0B1026;
+    /* Deep Space Navy (Background) */
+    --color-content: #F8F9FA;
+    /* Ghost White (Content Background) */
+    --color-accent: #14F195;
+    /* Solana Teal (Highlights) */
+    --color-text-main: #1C1C1C;
+    /* Primary Text (on light) */
+    --color-text-inv: #FFFFFF;
+    /* Inverse Text (on dark) */
+    --color-text-sub: #5F6C7B;
+    /* Secondary Text */
+    --color-border: #E2E8F0;
+    /* Subtle Border */
+    --color-border-dark: #1E293B;
+    /* Border on dark backgrounds */
+
+    /* Typography */
+    --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+    --font-body: "Inter", "Source Serif", system-ui, sans-serif;
+
+    /* Spacing & Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
+    --max-text-width: 720px;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-primary);
+    color: var(--color-text-inv);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+    color: var(--color-text-inv);
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    max-width: var(--max-text-width);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Utility Classes */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+/* Text Colors helper for components with light backgrounds */
+.text-dark {
+    color: var(--color-text-main);
+}
+
+.text-sub {
+    color: var(--color-text-sub);
+}
+
+/* Buttons & Interactive */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    /* Slightly squared for institutional feel */
+    font-size: 0.95rem;
+}
+
+/* "Request Access" outline style */
+.btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.btn-outline:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Muted buttons for Hero */
+.btn-muted {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+}
+
+.btn-muted:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Layout Utilities */
+section {
+    padding: 6rem 0;
+}
+
+/* Card / Content Area - Light Backgrounds per spec "Content background: #F8F9FA" */
+.content-card {
+    background: var(--color-content);
+    color: var(--color-text-main);
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+}
+
+.content-card h1,
+.content-card h2,
+.content-card h3 {
+    color: var(--color-text-main);
+}

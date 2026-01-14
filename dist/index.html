@@ -8,20 +8,19 @@
     <meta name="description"
         content="STAR Network is an independent professional association initiative building trust, transparency, and shared quality frameworks for Solana and Rust education.">
     <link rel="stylesheet" href="/website/style-8acb0441ddcac99c.css" integrity="sha384-vLoiwMKBaTIAFZorBmfI1d/24xt4r+jxobUThX+V1Sa8s6ZqX9UPLwqXE6A80Jd0"/>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <script>
+    <script type="text/javascript">
         // Restore the original path after 404 redirect
         (function () {
-            var redirect = sessionStorage.getItem('redirect');
-            if (redirect && redirect !== '/website/') {
-                sessionStorage.removeItem('redirect');
-                // Replace the base path and navigate via pushState
-                var path = redirect.replace('/website', '');
-                history.replaceState(null, null, '/website' + path);
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect !== location.href) {
+                history.replaceState(null, null, redirect);
             }
         })();
     </script>
-<link rel="modulepreload" href="/website/star-network-website-9974cdbd56a03140.js" crossorigin="anonymous" integrity="sha384-ACkcnPtBi1FNQm+3uAxHJ1X9BXPDMcRomJ/STwv2pN2gJm8ahTG+laVvMRpAiiwU"><link rel="preload" href="/website/star-network-website-9974cdbd56a03140_bg.wasm" crossorigin="anonymous" integrity="sha384-zt98mVE4rSoNDatvNVU3yVJcMRYb9I1dOoYGO9VAy518I/KenZuraWyWZ6IGk3Np" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/website/star-network-website-9974cdbd56a03140.js" crossorigin="anonymous" integrity="sha384-ACkcnPtBi1FNQm+3uAxHJ1X9BXPDMcRomJ/STwv2pN2gJm8ahTG+laVvMRpAiiwU"><link rel="preload" href="/website/star-network-website-9974cdbd56a03140_bg.wasm" crossorigin="anonymous" integrity="sha384-+7Pd1IeaFr/GyJ+UUtohc8SfcK4gkEYMxP2apW4vsJxdtN3FqtCJI2M7asSsDCaH" as="fetch" type="application/wasm"></head>
 
 <body>
 

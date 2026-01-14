@@ -233,7 +233,12 @@ pub fn About() -> impl IntoView {
 
                 <div style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
                      <h3>"Conflict of Interest Policy"</h3>
-                     <p style="color: var(--color-text-sub);">"STAR Network does not run its own courses. We do not compete with registry members. We exist solely to verify."</p>
+                     <p style="color: var(--color-text-sub); margin-bottom: 1.5rem;">
+                        "STAR Network does not operate as a commercial bootcamp or content marketplace and does not compete with educators listed in its registry for independent training work. STAR’s role is to define education standards, verify trainer quality, and coordinate trust within the Solana (Rust) education ecosystem."
+                     </p>
+                     <p style="color: var(--color-text-sub);">
+                        "STAR may deliver Train-the-Trainer programs, benchmarking tests, and certification assessments solely for the purpose of quality assurance and standards alignment. These activities are not substitutes for commercial training programs and are designed to support educators, not replace them. Trainers remain independent and are free to offer their own courses and services outside of STAR."
+                     </p>
                 </div>
              </div>
         </section>

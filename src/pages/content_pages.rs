@@ -141,14 +141,29 @@ pub fn Insights() -> impl IntoView {
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
                     <div class="content-card">
-                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Pedagogy"</div>
-                        <h3 style="margin-bottom: 1rem;">"Teaching Borrow Checker Intuitively"</h3>
-                        <p>"A new approach to explaining ownership without fighting the compiler."</p>
+                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Quality Standards"</div>
+                        <h3 style="margin-bottom: 1rem;">"Education Quality in Rust"</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">"What defines high-quality Rust education, and why consistency matters for long-term ecosystem adoption. A look at common gaps between learning formats and real-world requirements."</p>
                     </div>
-                     <div class="content-card">
-                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Ecosystem"</div>
-                        <h3 style="margin-bottom: 1rem;">"The 2026 Rust Developer Gap"</h3>
-                        <p>"Analysis of the current shortage in senior protocol engineers."</p>
+                    <div class="content-card">
+                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Trust"</div>
+                        <h3 style="margin-bottom: 1rem;">"Accreditation & Trust in Technical Training"</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">"Why informal reputation is not enough at scale. An introduction to how structured accreditation helps make training credibility visible and verifiable."</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Pedagogy"</div>
+                        <h3 style="margin-bottom: 1rem;">"Evaluating Trainer Capability Fairly"</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">"Teaching Rust well requires more than technical expertise alone. This topic explores balanced approaches to evaluating educators without gatekeeping."</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Skills"</div>
+                        <h3 style="margin-bottom: 1rem;">"Learning Pathways for Production-Ready Skills"</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">"How structured learning pathways support progression from fundamentals to real-world Rust use. Focuses on alignment with production environments rather than tutorial completion."</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 0.8rem; color: var(--color-text-sub); margin-bottom: 0.5rem; text-transform: uppercase;">"Risk"</div>
+                        <h3 style="margin-bottom: 1rem;">"Education as Ecosystem Infrastructure"</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">"Why education quality directly affects ecosystem risk, funding efficiency, and adoption speed. Examines training as a foundational layer, not a peripheral activity."</p>
                     </div>
                 </div>
             </div>

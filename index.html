@@ -8,20 +8,19 @@
     <meta name="description"
         content="STAR Network is an independent professional association initiative building trust, transparency, and shared quality frameworks for Solana and Rust education.">
     <link rel="stylesheet" href="/website/style-8acb0441ddcac99c.css" integrity="sha384-vLoiwMKBaTIAFZorBmfI1d/24xt4r+jxobUThX+V1Sa8s6ZqX9UPLwqXE6A80Jd0"/>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <script>
+    <script type="text/javascript">
         // Restore the original path after 404 redirect
         (function () {
-            var redirect = sessionStorage.getItem('redirect');
-            if (redirect && redirect !== '/website/') {
-                sessionStorage.removeItem('redirect');
-                // Replace the base path and navigate via pushState
-                var path = redirect.replace('/website', '');
-                history.replaceState(null, null, '/website' + path);
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect !== location.href) {
+                history.replaceState(null, null, redirect);
             }
         })();
     </script>
-<link rel="modulepreload" href="/website/star-network-website-592b673887f9f971.js" crossorigin="anonymous" integrity="sha384-NOk3RCo8sbs2Uzs/5EwRmdo22ptBpinOrIQzEnCYUjdTMnEvGseOwif+mqoKbYfx"><link rel="preload" href="/website/star-network-website-592b673887f9f971_bg.wasm" crossorigin="anonymous" integrity="sha384-bXyCvM8lCfj+trure2xEWOD74OS0y3RenDj6KIqFFIqfIF0Kbjb9Ra5Og070mbxi" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/website/star-network-website-592b673887f9f971.js" crossorigin="anonymous" integrity="sha384-rb7pSW9+RcgVfsZy4Yu8u8CiESv30s16udlVQ2ukmgt6T266A+uqEyAMgARqpZBA"><link rel="preload" href="/website/star-network-website-592b673887f9f971_bg.wasm" crossorigin="anonymous" integrity="sha384-4tDhuPkud2zvS9db9MM12OgoVKTAqfpC1/4PH+Bh/LLwxNnF5G0MypmrEACn6jeX" as="fetch" type="application/wasm"></head>
 
 <body>
 

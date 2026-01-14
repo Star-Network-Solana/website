@@ -99,7 +99,7 @@ pub fn Educators() -> impl IntoView {
 
                 <div style="text-align: center; padding: 4rem 0; background: var(--color-surface); border-radius: 8px;">
                      <h3 style="color: white; margin-bottom: 2rem;">"Ready to Verify?"</h3>
-                     <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">"Request Registry Review"</a>
+                     <a href="https://discord.gg/CNHQKDPm" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">"Request Registry Review"</a>
                 </div>
              </div>
         </section>
@@ -123,7 +123,7 @@ pub fn Enterprises() -> impl IntoView {
                     <p>"STAR Network does not guarantee outcomes, performance, or suitability for specific use cases."</p>
                 </div>
 
-                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">"Request Vetted Educators"</a>
+                <a href="https://discord.gg/CNHQKDPm" target="_blank" rel="noopener noreferrer" class="btn btn-primary">"Request Vetted Educators"</a>
             </div>
         </section>
     }
@@ -189,6 +189,29 @@ pub fn About() -> impl IntoView {
                             <li><strong style="color: var(--color-text-inv);">"Accreditation Authority:"</strong> " Emerging (future-state)"</li>
                             <li><strong style="color: var(--color-text-inv);">"Commercial Interest:"</strong> " Neutral, trainer-first, non-exclusive"</li>
                         </ul>
+                    </div>
+                </div>
+
+                // Founders Profile Section
+                <div style="margin-bottom: 4rem;">
+                    <h2 style="margin-bottom: 2rem; color: var(--color-accent);">"Founders Profile"</h2>
+                    <div class="grid-responsive-2" style="gap: 3rem;">
+                        // Amy Thomason
+                        <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--color-border-dark);">
+                            <h3 style="color: white; margin-bottom: 0.5rem;">"Amy Thomason"</h3>
+                            <p style="color: var(--color-accent); font-weight: 500; font-size: 0.9rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;">"Founder & Lead Educator"</p>
+                            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-sub); margin-bottom: 0;">
+                                "Amy Thomason is a senior Rust educator and systems programmer with 30+ years of experience across game engines, compilers, and blockchain infrastructure. She has taught Rust to both academic and corporate audiences, led long-running Rust meetups including Oxford ACCU/Rust, and is a published technical author. Her background includes blockchain node development, decentralized systems architecture, and former leadership as MSc faculty in games development. At STAR Network, Amy defines education standards, trainer quality benchmarks, and the Train-the-Trainer pathway."
+                            </p>
+                        </div>
+                        // Gaveesh Jain
+                        <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--color-border-dark);">
+                            <h3 style="color: white; margin-bottom: 0.5rem;">"Gaveesh Jain"</h3>
+                            <p style="color: var(--color-accent); font-weight: 500; font-size: 0.9rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;">"Founder & Community Builder"</p>
+                            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-sub); margin-bottom: 0;">
+                                "Gaveesh Jain is a startup founder with 9+ years of experience building and scaling ventures across fintech, healthcare, and Web3. He holds an MBA in Innovation and has worked extensively in business development, partnerships, and platform strategy. Gaveesh has conducted deep, hands-on research across the Solana ecosystem through developer events, community engagement, and direct collaboration with builders and educators. At STAR Network, he focuses on ecosystem partnerships, community growth, and building sustainable infrastructure for Solana education."
+                            </p>
+                        </div>
                     </div>
                 </div>
 

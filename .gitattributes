@@ -1,0 +1,6 @@
+* linguist-vendored
+*.rs linguist-detectable=true
+src/**/* linguist-detectable=true
+public/**/* linguist-vendored
+dist/**/* linguist-vendored
+target/**/* linguist-vendored
